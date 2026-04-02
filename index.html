@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Xynapse — Free high-quality scripts for developers. Browse clean, safe, and ready-to-use code for your projects.">
+  <meta name="keywords" content="scripts, free scripts, developer tools, code sharing, Xynapse">
+  <title>Xynapse — High Quality</title>
+  <link rel="icon" type="image/png" href="Assets/xynapse.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAVBAR ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <img src="Assets/xynapse.png" alt="Xynapse Logo" class="nav-logo-img">
+        <span class="nav-logo-text">Xynapse</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#scripts" class="nav-link">Loader</a></li>
+        <li><a href="#why-choose-us" class="nav-link">Why Choose Us</a></li>
+        <li><a href="#discord" class="nav-link nav-link-discord">Discord</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO ═══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">Premium</div>
+        <h1 class="hero-title">Xynapse</h1>
+        <p class="hero-subtitle">A Powerful Roblox Exploit</p>
+        <div class="hero-actions">
+          <a href="#scripts" class="btn btn-primary" id="btn-browse-scripts">Download</a>
+          <a href="#discord" class="btn btn-outline" id="btn-join-discord-hero">Discord</a>
+          <p class="hero-subtitle"> </p>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="Assets/xynapse.png" alt="Xynapse" class="hero-logo-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ LOADER ═══════════════════════════════════════════ -->
+  <section class="section loader-section" id="scripts">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Loader</h2>
+        <p class="section-subtitle">Load Xynapse scripts directly. Copy and execute.</p>
+      </div>
+      <div class="loader-showcase loader-showcase--single">
+
+        <!-- Code Block -->
+        <div class="loader-code-wrapper">
+          <div class="script-card" id="script-card-1">
+            <div class="script-card-header">
+              <div class="script-dot-row">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="script-lang">Lua</span>
+            </div>
+            <h3 class="script-name">Xynapse Loader</h3>
+            <p class="script-desc">Execute script directly from repository with a single function
+              call.</p>
+            <div class="code-block">
+              <button class="copy-btn" data-copy="script-code-1" aria-label="Copy code">Copy</button>
+              <pre><code id="script-code-1"><span class="kw">function</span> <span class="fn">fetch</span>(<span class="param">owner</span>, <span class="param">repository</span>, <span class="param">tags</span>)
+    <span class="kw">local</span> Url = <span class="param">string</span>.<span class="fn">format</span>(
+        <span class="str">"%s/%s/%s/%s/latest/download/main.lua"</span>,
+        <span class="str">"https://github.com"</span>,
+        owner, repository, tags
+    )
+
+    <span class="kw">return</span> <span class="fn">loadstring</span>(game:<span class="fn">HttpGet</span>(Url))
+<span class="kw">end</span>
+
+<span class="fn">fetch</span>(<span class="str">"vita6it"</span>, <span class="str">"Xynapse"</span>, <span class="str">"releases"</span>)()</code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ DISCORD ═══════════════════════════════════════════ -->
+  <section class="section discord-section" id="discord">
+    <div class="container">
+      <div class="discord-inner">
+        <div class="discord-content">
+          <h2 class="section-title">Join Our Community</h2>
+          <p class="discord-desc">
+            All in our active Discord
+            server.
+          </p>
+          <a href="https://discord.gg/" class="btn btn-primary btn-discord" id="btn-join-discord-section"
+            target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561 19.9312 19.9312 0 005.9932 3.0294.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057 13.1073 13.1073 0 01-1.8722-.8923.0766.0766 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286 19.8975 19.8975 0 006.0023-3.0294.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z" />
+            </svg>
+            Join Discord
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER ═══════════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <img src="Assets/xynapse.png" alt="Xynapse Logo" class="footer-logo-img">
+            <span class="footer-logo-text">Xynapse</span>
+          </a>
+          <p class="footer-tagline">High Quality Scripts.<br>Community Driven.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Navigate</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#scripts">Loader</a></li>
+              <li><a href="#why-choose-us">Why Choose Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Community</h4>
+            <ul>
+              <li><a href="#discord">Discord</a></li>
+              <li><a href="https://github.com/vita6it/Xynapse" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Xynapse. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

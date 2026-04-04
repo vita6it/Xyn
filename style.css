@@ -66,7 +66,7 @@
 
   /* Layout */
   --container-max: 1120px;
-  --nav-height: 64px;
+
 }
 
 html {
@@ -135,120 +135,14 @@ ul {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   NAVBAR
-   ═══════════════════════════════════════════════════════════════════════ */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  height: var(--nav-height);
-  background-color: rgba(0, 0, 0, 0.45);
-  /* 0.5 opacity black */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-default);
-  transition: background-color var(--transition-normal);
-}
 
-.nav-container {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 var(--space-xl);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-
-.nav-logo-img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-}
-
-.nav-logo-text {
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--text-primary);
-}
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-}
-
-.nav-link {
-  display: inline-flex;
-  align-items: center;
-  padding: var(--space-sm) var(--space-md);
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  border-radius: var(--radius-sm);
-  transition: color var(--transition-fast), background-color var(--transition-fast);
-  position: relative;
-}
-
-.nav-link:hover {
-  color: var(--text-primary);
-  background-color: var(--bg-elevated);
-}
-
-.nav-link.active {
-  color: var(--text-primary);
-}
-
-.nav-link-discord {
-  margin-left: var(--space-sm);
-  color: var(--text-primary);
-  border: 1px solid var(--border-default);
-  border-radius: var(--radius-sm);
-}
-
-.nav-link-discord:hover {
-  border-color: var(--border-hover);
-  background-color: var(--bg-elevated);
-}
-
-/* Hamburger */
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: var(--space-sm);
-}
-
-.hamburger-line {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: var(--text-secondary);
-  border-radius: 2px;
-  transition: transform var(--transition-normal), opacity var(--transition-normal);
-}
-
-/* ═══════════════════════════════════════════════════════════════════════
    HERO
    ═══════════════════════════════════════════════════════════════════════ */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: var(--nav-height);
+
   background-color: rgba(10, 10, 10, 0.5);
   /* Slightly faded background color */
   background-image: url('https://assets.create.roblox.com/7852826297acf65144358c437c8734503e80a2c0/assets/landing/back_drop.webp');
